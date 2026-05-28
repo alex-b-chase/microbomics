@@ -655,13 +655,14 @@ a {
   
   .mosaic-panel {
     border-radius: 16px;
-    padding: 10px;
+    padding: 28px 10px 10px;
   }
   
   .panel-label {
-    top: 8px;
-    left: 10px;
-    font-size: 9px;
+    top: 7px;
+    left: 8px;
+    font-size: 7.5px;
+    padding: 3px 6px;
   }
 
   .grid-3,
