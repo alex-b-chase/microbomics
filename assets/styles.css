@@ -328,20 +328,34 @@ a {
   stroke-width: 2;
 }
 
-.abstract-panel div {
-  border-radius: 22px;
-  background: rgba(255, 255, 255, .16);
-  backdrop-filter: blur(4px);
+.panel-svg polygon {
+  fill: none;
+  stroke: rgba(255, 255, 255, .90);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.abstract-panel div:nth-child(2),
-.abstract-panel div:nth-child(6) {
-  background: rgba(255, 255, 255, .28);
+.panel-text {
+  fill: rgba(255, 255, 255, .92);
+  font-size: 22px;
+  font-weight: 800;
+  font-family: Inter, Arial, sans-serif;
 }
 
-.abstract-panel div:nth-child(4),
-.abstract-panel div:nth-child(8) {
-  grid-column: span 2;
+.panel-text.soft {
+  opacity: .7;
+}
+
+.panel-tree .panel-svg line,
+.panel-network .panel-svg line,
+.panel-pathway .panel-svg line {
+  stroke-width: 3.5;
+}
+
+.panel-env .panel-svg path,
+.panel-env .panel-svg line {
+  stroke-width: 3;
 }
 
 .approach-tag {
@@ -626,6 +640,22 @@ a {
 
   .approach-tag strong {
     white-space: normal;
+  }
+
+  .abstract-panel {
+    gap: 10px;
+    padding: 12px;
+  }
+  
+  .mosaic-panel {
+    border-radius: 16px;
+    padding: 10px;
+  }
+  
+  .panel-label {
+    top: 8px;
+    left: 10px;
+    font-size: 9px;
   }
 
   .grid-3,
