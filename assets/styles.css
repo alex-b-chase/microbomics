@@ -651,6 +651,7 @@ a {
   }
 
   .abstract-panel {
+    min-height: auto;
     gap: 12px;
     padding: 12px;
     grid-template-columns: 1fr;
