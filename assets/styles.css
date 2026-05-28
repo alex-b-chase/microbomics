@@ -651,38 +651,32 @@ a {
   }
 
   .abstract-panel {
-    gap: 10px;
+    gap: 12px;
     padding: 12px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     aspect-ratio: auto;
   }
   
   .mosaic-panel {
-    border-radius: 16px;
-    padding: 30px 8px 8px;
-    min-height: 118px;
+    border-radius: 18px;
+    padding: 34px 12px 12px;
+    min-height: 150px;
   }
   
   .span-2 {
-    grid-column: span 2;
+    grid-column: span 1;
   }
   
   .panel-label {
-    top: 7px;
-    left: 8px;
-    font-size: 7.5px;
-    padding: 3px 6px;
+    top: 8px;
+    left: 10px;
+    font-size: 8px;
+    padding: 4px 7px;
   }
   
   .panel-svg {
-    transform: translateY(4px) scale(1.12);
-  }
-  
-  .panel-label {
-    top: 7px;
-    left: 8px;
-    font-size: 7.5px;
-    padding: 3px 6px;
+    transform: translateY(4px) scale(1.35);
+    transform-origin: center center;
   }
 
   .grid-3,
