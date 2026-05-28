@@ -266,8 +266,8 @@ a {
 .mosaic-panel {
   position: relative;
   border-radius: 22px;
-  padding: 12px;
-  background: rgba(255,255,255,.16);
+  padding: 30px 12px 12px;
+  background: rgba(255, 255, 255, .16);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   overflow: hidden;
@@ -284,14 +284,20 @@ a {
 
 .panel-label {
   position: absolute;
-  top: 10px;
-  left: 12px;
+  top: 8px;
+  left: 10px;
   z-index: 2;
-  color: rgba(255,255,255,.86);
-  font-size: 10px;
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: rgba(16, 47, 55, .45);
+  color: rgba(255, 255, 255, .90);
+  font-size: 8.5px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: .16em;
+  letter-spacing: .12em;
+  line-height: 1;
 }
 
 .panel-svg {
