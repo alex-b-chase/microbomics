@@ -305,7 +305,7 @@ a {
   height: 100%;
   display: block;
   transform: scale(1.12);
-  transform-origin: center center;
+  transform-origin: center 45%;
 }
 
 .panel-svg path,
