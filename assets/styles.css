@@ -246,17 +246,86 @@ a {
   backdrop-filter: blur(8px);
 }
 
+/* =======================================================
+   Hero mosaic artwork
+   ======================================================= */
+
 .abstract-panel {
   aspect-ratio: 4 / 3;
   border-radius: 26px;
-  padding: 24px;
+  padding: 18px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   background:
-    radial-gradient(circle at 25% 20%, rgba(255, 255, 255, .45), transparent 18%),
-    radial-gradient(circle at 75% 35%, rgba(104, 167, 159, .7), transparent 22%),
+    radial-gradient(circle at 25% 20%, rgba(255,255,255,.24), transparent 18%),
+    radial-gradient(circle at 75% 35%, rgba(104,167,159,.36), transparent 24%),
     linear-gradient(135deg, #244f58, #102f37 55%, #d0a961);
+}
+
+.mosaic-panel {
+  position: relative;
+  border-radius: 22px;
+  padding: 12px;
+  background: rgba(255,255,255,.16);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  overflow: hidden;
+}
+
+.mosaic-panel:nth-child(2),
+.mosaic-panel:nth-child(6) {
+  background: rgba(255,255,255,.28);
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.panel-label {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  z-index: 2;
+  color: rgba(255,255,255,.86);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+}
+
+.panel-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.panel-svg path,
+.panel-svg line,
+.panel-svg ellipse,
+.panel-svg circle,
+.panel-svg rect {
+  fill: none;
+  stroke: rgba(255,255,255,.90);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.panel-svg .thin {
+  stroke-width: 3;
+  opacity: .72;
+}
+
+.panel-svg .fill-dot {
+  fill: rgba(255,255,255,.92);
+  stroke: none;
+}
+
+.panel-svg .fill-soft {
+  fill: rgba(255,255,255,.22);
+  stroke: rgba(255,255,255,.72);
+  stroke-width: 2;
 }
 
 .abstract-panel div {
